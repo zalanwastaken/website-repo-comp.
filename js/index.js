@@ -7,7 +7,7 @@ const processEventData = {
         <a href="https://www.youtube.com/">Click me !</a>
     `
 }
-function processEvent(element){
+function processEvent(element){ //? Process the clicked event for the tabs using the prossesed event data const
     var bodyDiv = document.getElementById("bodydiv")
     if(element.innerHTML in processEventData){
         bodyDiv.innerHTML = processEventData[element.innerHTML]

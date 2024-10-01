@@ -34,3 +34,10 @@ a:hover{
     border: 1px solid #ccc;
     border-top: none;
 }
+.centeredtext {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: default;
+}
