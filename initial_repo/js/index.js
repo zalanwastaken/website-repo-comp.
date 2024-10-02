@@ -31,3 +31,6 @@ function processEvent(element){ //? Process the clicked event for the tabs using
     }
     console.log(processEventData[element.innerHTML])
 }
+function nope(){
+    alert("nope")
+}
