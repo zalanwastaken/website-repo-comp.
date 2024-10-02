@@ -34,10 +34,30 @@ a:hover{
     border: 1px solid #ccc;
     border-top: none;
 }
-.centeredtext {
+.centeredtext{
     top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
     cursor: default;
+}
+decotext{
+    color: inherit;
+    font-size: medium;
+    cursor: default;
+    text-decoration: inherit;
+    display: block;
+}
+.code{
+    background-color: lightgray;
+    display: block;
+    border-radius: 5px;
+    color: black;
+}
+.footer{
+    background-color: gray;
+    display: block;
+    color: black;
+    border-radius: 5px;
+    overflow: hidden;
 }
