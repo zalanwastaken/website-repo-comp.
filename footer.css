@@ -1,0 +1,59 @@
+/* styling for footer */
+footer{
+    width: 100%;
+    height: 40vh;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+footer>.upper-section{
+    height: 50%;
+    width: 100%;
+    margin: 2.5vh 0;
+}
+
+footer>.lower-section{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer hr{
+    border: 1px solid #a9a9a9;
+    margin: 0 5vw;
+}
+
+footer>.upper-section>.sri-links{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin:  0 ;
+    font-size: 1.25rem;
+}
+
+footer>.upper-section>.sri-links>.logo{
+    width: 40%;
+}
+
+footer>.upper-section>.sri-links>.links{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer>.upper-section>.sri-links>.links>a:hover{
+    color: #16AC28;
+}
+
+footer>.upper-section>.sri-links>.links>a{
+    color: #000000;
+}
+
+footer>.lower-setion>.first{
+    font-size: 1.5rem;
+    font-weight: 400;
+}

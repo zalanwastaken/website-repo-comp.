@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Impact</title>
+    <link rel="stylesheet" href="faq-page.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .highlight {
+            background-color: yellow; /* Change to desired highlight color */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="name">
+            <a href="index.html" style="text-decoration: none;"><img src="assets/sri.jpg" style="max-width: 60%; height: 100%;"></a>
+            <div class="text" style="width: 10vw;">Eco Impact Foundation</div>
+        </div>
+        <div class="search-box">
+            <form onsubmit="searchContent(event)">
+                <input type="search" name="q" id="search-bar" placeholder="Search">
+                <button type="submit" id="search-icon"><span class="material-symbols-outlined">Search</span></button>
+            </form>
+        </div>
+    </header>
+    <hr><br><br>
+    <main>
+        <section class="faq">
+            <img src="assets/faq.svg" alt="">
+            <h1 class="heading">FAQ</h1>
+            <div class="container" style="border-radius: 15px;">
+                <div class="question">What is Eco Impact Digital Solutions?</div>
+                <p>Eco Impact Digital Solutions is an organization dedicated to promoting sustainable change through innovative digital solutions.</p>
+                <br>
+                <div class="question">How do we define sustainability?</div>
+                <p>Sustainability means meeting our present needs without compromising the ability of future generations to meet theirs.</p>
+                <br>
+                <div class="question">What services do we offer?</div>
+                <p>We offer consulting, digital strategy development, and implementation of eco-friendly technologies.</p>
+                <br>
+                <div class="question">Who can benefit from our services?</div>
+                <p>Businesses, non-profits, and government agencies looking to improve their sustainability practices can benefit from our services.</p>
+                <br>
+                <div class="question">How do we measure the impact of your solutions?</div>
+                <p>We use key performance indicators (KPIs) and impact assessments to evaluate the effectiveness of our initiatives.</p>
+                <br>
+                <div class="question">Are our solutions customizable?</div>
+                <p>Yes, our solutions are tailored to meet the unique needs of each client and their sustainability goals.</p>
+                <br>
+                <div class="question">What industries do we work with?</div>
+                <p>We work with a wide range of industries, including energy, agriculture, transportation, and waste management.</p>
+                <br>
+                <div class="question">How can we get involved with Eco Impact Digital Solutions?</div>
+                <p>You can get involved by partnering with us, volunteering, or participating in our sustainability programs.</p>
+                <br>
+                <div class="question">Do we provide training on sustainability practices?</div>
+                <p>Yes, we offer workshops and training sessions to help organizations implement sustainable practices effectively.</p>
+                <br>
+                <div class="question">How can we contact you for more information?</div>
+                <p>You can reach us through our contact no. 123-456-7890 or by emailing us directly at info@ecoimpactdigital.com.</p>
+            </div>
+        </section>
+    </main>
+    <div class="divider"></div>
+    <footer>
+        <div class="upper-section">
+            <h1 class="heading">Follow Us</h1>
+            <hr>
+            <div class="sri-links">
+                <div class="logo">
+                    <span>S. R. International School</span>
+                </div>
+                <div class="links">
+                    <a href="https://www.youtube.com/@srinternationalschoolbareilly" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="http://" target="_blank"><i class="fa-brands fa-meta"></i></a>
+                    <a href="http://" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="http://" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/srinternational_school/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="lower-section">
+            <span class="first">Eco Impact Foundation</span>
+            <span class="second">© 2024|All rights are reserved.</span>
+        </div>
+    </footer>
+
+    <script>
+        function searchContent(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            const query = document.getElementById('search-bar').value.toLowerCase();
+            const content = document.querySelector('.faq');
+            const textElements = content.querySelectorAll('p, .question'); // Select all relevant text elements
+
+            // Clear previous highlights
+            textElements.forEach(element => {
+                element.innerHTML = element.textContent; // Reset to original text
+            });
+
+            if (query) {
+                textElements.forEach(element => {
+                    const regex = new RegExp(`(${query})`, 'gi');
+                    element.innerHTML = element.textContent.replace(regex, '<span class="highlight">$1</span>');
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>

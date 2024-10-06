@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Section</title>
+    <style>
+        body {
+            font-family: 'EB Garamond', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: 300;
+        }
+        .container {
+            padding: 20px;
+            margin-left: 7.5vw;
+            margin-right: 7.5vw;
+            text-align: left;
+        }
+        @media (max-width: 1023px) {
+            .container {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-left: 0;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 20px;
+        }
+        .service-box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: left;
+            font-weight: 500;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .service-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .service-price {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .service-button {
+            background-color: #f0c040;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .service-button:hover {
+            background-color: black;
+            color: #f0c040;
+        }
+
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Services</h1>
+        <div class="services">
+            <div class="service-box">
+                <h3 class="service-title">Sustainability Workshop</h3>
+                <p class="service-price">₹11,000</p>
+                <button class="service-button">Book Now</button>
+            </div>
+            <div class="service-box">
+                <h3 class="service-title">Consultation Session</h3>
+                <p class="service-price">₹7,500</p>
+                <button class="service-button">Book Now</button>
+            </div>
+            <div class="service-box">
+                <h3 class="service-title">Sustainability Networking Event</h3>
+                <p class="service-price">₹15,000</p>
+                <button class="service-button">View Course</button>
+            </div>
+            <div class="service-box">
+                <h3 class="service-title">Eco-Friendly Design Service</h3>
+                <p class="service-price">₹20,000</p>
+                <button class="service-button">Contact Us</button>
+            </div>
+            <div class="service-box">
+                <h3 class="service-title">Green Energy Audit</h3>
+                <p class="service-price">₹9,000</p>
+                <button class="service-button">Schedule Now</button>
+            </div>
+            <div class="service-box">
+                <h3 class="service-title">Waste Management Consultation</h3>
+                <p class="service-price">₹12,500</p>
+                <button class="service-button">Learn More</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="LICENCE.txt"><p>&copy; 2024 Eco Impact Foundation. All rights reserved.</p></a>
+        <button class="service-button" onclick="window.location.href='index.html'">Go to Home</button>
+    </div>
+</body>
+</html>

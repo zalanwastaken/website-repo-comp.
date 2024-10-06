@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        @import "style.css";
+        .highlight {
+            background-color: yellow; /* Change to desired highlight color */
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <header>
+        <div class="name">
+            <a href="index.html" style="text-decoration: none;"><img src="assets/sri.jpg" style="max-width: 60%; height: 100%;"></a>
+            <div class="text" style="width: 10vw;">Eco Impact Foundation</div>
+        </div>
+        <div class="search-box">
+            <form onsubmit="searchContent(event)">
+                <input type="search" name="q" id="search-bar" placeholder="Search">
+                <button type="submit" id="search-icon"><span class="material-symbols-outlined">Search</span></button>
+            </form>
+        </div>
+    </header>
+    <section id="about-us">
+        <h1 class="heading" align="center">About Us</h1>
+        <h2 style="font-size: xx-large;">Our Mission</h2>
+        <p>At Eco Impact, in S. R. International School we believe that sustainable change is not just a goal but a necessity for our planet’s future. Founded with a passion for environmental stewardship, our organization is dedicated to driving awareness and developing innovative digital solutions that empower individuals and businesses to make a positive impact.</p>
+        <div class="gallery">
+            <div class="img">
+                <img src="assets/Portrait.webp" alt="Sorry we couldn't load this image." style="border-radius: 1rem;">
+            </div>
+            <div class="text">
+                <div class="info">
+                    Our success stories highlight digital solutions that have made a real impact in sustainability.
+                    <br>
+                    Join us in our mission to inspire change and contribute to a more eco-conscious world.
+                    <br>
+                    <br>
+                    We leverage the latest digital technologies to raise awareness about environmental issues and promote sustainable practices. Our services include:
+                    <br>
+                    <ul>
+                        <li>Educational Campaigns: We create engaging content and resources that inform communities about sustainability, climate change, and conservation efforts.</li>
+                        <li>Digital Solutions: From app development to web platforms, we design tools that help organizations track their environmental impact and implement sustainable strategies.</li>
+                        <li>Partnerships: We collaborate with like-minded organizations, businesses, and communities to amplify our message and drive collective action toward a greener future.</li>
+                    </ul>
+                    <br>
+                    <br>
+                    Our Vision:
+                    <br>
+                    <br>
+                    We envision a world where technology and sustainability go hand in hand. By harnessing digital innovation, we, the family of S. R. International School aim to empower individuals and organizations to take meaningful steps towards reducing their environmental footprint and fostering a culture of sustainability.
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="upper-section">
+            <h1 class="heading">Follow Us</h1>
+            <hr>
+            <div class="sri-links">
+                <div class="logo">
+                    <span>S. R. International School</span>
+                </div>
+                <div class="links">
+                    <a href="https://www.youtube.com/@srinternationalschoolbareilly" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="http://" target="_blank"><i class="fa-brands fa-meta"></i></a>
+                    <a href="http://" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="http://" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/srinternational_school/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="lower-section">
+            <span class="first">Eco Impact Foundation</span>
+            <button onclick="location.href = 'services.html'">Our Service</button>
+            <button onclick="location.href = 'n.html'">🙏Donate🙏</button>
+            <a href="LICENCE.txt"><span class="second">© 2024|All rights are reserved.</span></a>
+        </div>
+    </footer>
+    <script>
+        function searchContent(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            const query = document.getElementById('search-bar').value.toLowerCase();
+            const content = document.getElementById('about-us');
+            const textElements = content.querySelectorAll('p, h1, h2, li'); // Select all relevant text elements
+
+            // Clear previous highlights
+            textElements.forEach(element => {
+                element.innerHTML = element.textContent; // Reset to original text
+            });
+
+            if (query) {
+                textElements.forEach(element => {
+                    const regex = new RegExp(`(${query})`, 'gi');
+                    element.innerHTML = element.textContent.replace(regex, '<span class="highlight">$1</span>');
+                });
+            }
+        }
+    </script>
+</body>
+</html>

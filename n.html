@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Our Green Mission</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            background-color: #e28000e8;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .tab {
+            cursor: pointer;
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            margin: 0 5px;
+            background-color: #fff;
+        }
+        .tab.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .donate-amount {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #21fa1a;
+            background-color: white;
+            cursor: pointer;
+            text-align: center;
+        }
+        .donate-amount:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .custom-donate {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .custom-donate input {
+            width: 100px;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px 0;
+            background-color: #1b9b02;
+            color: white;
+            position: relative;
+        }
+        .back-home {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Support Our Green Mission</h1>
+        <p>Your contribution helps us make a sustainable impact</p>
+    </div>
+    <div class="container">
+        <div class="tabs">
+            <button class="tab active" onclick="showTab('monthly')">Monthly</button>
+            <button class="tab" onclick="showTab('one-time')">One-time</button>
+        </div>
+        <div id="monthly" class="tab-content active">
+            <button class="donate-amount" onclick="setamt(this)">₹500</button>
+            <button class="donate-amount" onclick="setamt(this)">₹2000</button>
+            <button class="donate-amount" onclick="setamt(this)">₹5000</button>
+        </div>
+        <div id="one-time" class="tab-content">
+            <button class="donate-amount" onclick="setamt(this)">₹1000</button>
+            <button class="donate-amount" onclick="setamt(this)">₹5000</button>
+            <button class="donate-amount" onclick="setamt(this)">₹10000</button>
+        </div>
+        <div class="custom-donate">
+            <label for="custom-amount">Donate, just once:</label>
+            <input type="text" id="custom-amount" placeholder="₹5000">
+            <button class="donate-button" onclick="donate(this)">Donate ❤️</button>
+            <p align="center" id="out"></p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Corporate memberships available - Contact us for more info</p>
+        <br>
+        <br>
+        <a href="index.html" class="back-home" style="width: 100vw; font-size: large;">Back to Home</a>
+    </div>
+    <script src="n.js"></script>
+</body>
+</html>
