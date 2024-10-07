@@ -239,19 +239,19 @@ header>.search-box span {
 }
 
 #blog>.gallery .blogpic1 {
-    background: url(assets/blogpic1.jpg);
+    background: url(../assets/blogpic1.jpg);
     background-position: center;
     border-radius: 1rem;
 }
 
 #blog>.gallery .blogpic2 {
-    background: url(assets/blogpic2.jpg);
+    background: url(../assets/blogpic2.jpg);
     background-position: center;
     border-radius: 1rem;
 }
 
 #blog>.gallery .blogpic3 {
-    background: url(assets/blogpic3.jpg);
+    background: url(../assets/blogpic3.jpg);
     background-position: center;
     border-radius: 1rem;
 }
@@ -323,7 +323,4 @@ footer button{
     border: none;
     border-radius: 2rem;
     cursor: pointer;
-}
-.highlight {
-    background-color: yellow; /* Change to desired highlight color */
 }
