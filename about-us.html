@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <style>
+        @import "css/about-us.css";
         @import "css/style.css";
         @import "css/footer.css";
         @import "css/header.css";
@@ -17,13 +18,18 @@
     </style>
 </head>
 <body>
-    <header>
+    <header style="position: sticky; top: 0; width: 100vw; padding: 1vh 2vw ;">
         <div class="name">
-            <a href="index.html" style="text-decoration: none;"><img src="assets/sri.png" style="max-width: 60%; height: 100%;"></a>
+            <a href="index.html" style="text-decoration: none;"><img src="assets/sri.png"
+                    style="max-width: 60%; height: 100%;"></a>
             <div class="text" style="width: 10vw;">Eco Impact Foundation</div>
         </div>
         <div class="nav">
             <span class="home"><a href="index.html">Home</a></span>
+            <span class="about-us"><a href="about-us.html">About Us</a></span>
+            <span class="blog"><a href="index.html#blog">Blog</a></span>
+            <span class="faq-page"><a href="faq-page.html">FaQ</a></span>
+            <span class="services"><a href="services.html">Services</a></span>
         </div>
         <div class="search-box">
             <form onsubmit="searchContent(event)">

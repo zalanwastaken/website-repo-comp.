@@ -1,0 +1,17 @@
+.content{
+    padding: 25px;
+    border: solid gray;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: white;
+}
+.blogs{
+    padding: 20px;
+    border: solid gray;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: darkgray;
+}
+#content{
+    padding: 10px;
+}

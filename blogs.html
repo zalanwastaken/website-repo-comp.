@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <style>
+        @import "css/style.css";
+        @import "css/header.css";
+        @import "css/blogs.css";
+        @import "css/footer.css";
+        @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
+    </style>
+</head>
+
+<body>
+    <header style="position: sticky; top: 0; width: 100vw; padding: 1vh 2vw ;">
+        <div class="name">
+            <a href="index.html" style="text-decoration: none;"><img src="assets/sri.png"
+                    style="max-width: 60%; height: 100%;"></a>
+            <div class="text" style="width: 10vw;">Eco Impact Foundation</div>
+        </div>
+        <div class="nav">
+            <span class="home"><a href="index.html">Home</a></span>
+            <span class="about-us"><a href="about-us.html">About Us</a></span>
+            <span class="blog"><a href="index.html#blog">Blog</a></span>
+            <span class="faq-page"><a href="faq-page.html">FaQ</a></span>
+            <span class="services"><a href="services.html">Services</a></span>
+        </div>
+        <div class="search-box">
+            <form onsubmit="searchContent(event)">
+                <input type="search" name="q" id="search-bar" placeholder="Search">
+                <button type="submit" id="search-icon"><span class="material-symbols-outlined">Search</span></button>
+            </form>
+        </div>
+    </header>
+    <main id="content">
+        <div class="blogs">
+            <h1>Helping the needy</h1>
+            <p>By Mudit Mishra(VIII-B)</p>
+            <div class="content">
+                <h1>Understanding the "Why" Behind Needs: A Guide to Helping Others Effectively</h1>
+
+                <p>
+                    When we set out to help someone, it's important to go beyond just addressing the surface problem.
+                    The real key to making a lasting impact is understanding <em>why</em> the need exists in the first
+                    place. If we focus on the root cause, we can offer better, more meaningful support.
+                </p>
+
+                <p>Here’s how you can approach it:</p>
+
+                <h2>1. Listen Carefully</h2>
+                <p>
+                    Before jumping to solutions, take the time to listen. Often, the true need isn’t immediately
+                    obvious. People might share their frustrations or symptoms of a bigger issue, but if you listen
+                    closely, you can pick up on what’s really going on. Giving someone the space to talk and express
+                    themselves helps them feel heard and can reveal deeper insights.
+                </p>
+
+                <h2>2. Ask Questions That Dig Deeper</h2>
+                <p>
+                    Sometimes, the first thing someone asks for isn’t actually what they need most. Asking open-ended
+                    questions like “What’s been going on?” or “How does this affect you?” encourages the person to
+                    reflect and explain the bigger picture. This can help uncover the underlying causes of their
+                    problem, leading to a more effective solution.
+                </p>
+
+                <h2>3. Offer Solutions That Address Both Immediate and Long-Term Needs</h2>
+                <p>
+                    Once you’ve identified the "why," you can provide help that’s more targeted. For example, someone
+                    might need money to pay a bill, but their larger issue could be unemployment or financial planning.
+                    By addressing both the short-term need and offering guidance or resources for long-term stability,
+                    you’re helping in a way that lasts beyond the moment.
+                </p>
+
+                <h2>4. Be Ready to Adjust</h2>
+                <p>
+                    Life changes, and so do people’s needs. After helping, it’s a good idea to follow up and see how
+                    things are going. Maybe your initial solution worked, or maybe new challenges have popped up. Being
+                    flexible and offering continued support shows you care and are invested in the person’s well-being.
+                </p>
+
+                <p>
+                    Understanding the "why" behind someone’s need can make your support more impactful. It’s not just
+                    about solving problems, but about creating lasting, positive change in their life.
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="blogs"></div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#welsome">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                </ul>
+            </div>
+            <div class="footer-section footer-socials">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i> Instagram</a>
+            </div>
+            <div class="footer-section footer-subscribe">
+                <h3>Subscribe to our Newsletter</h3>
+                <form id="subscribeForm" onsubmit="return validateEmail()">
+                    <input type="email" id="emailInput" placeholder="Your email" required>
+                    <button type="submit">Subscribe</button>
+                    <p id="error-message" style="color:red; display:none;">Please enter a valid email.</p>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p style="color: #00bcd4;">&copy; <a href="licence.txt" style="color: inherit;">2024 Eco Impact Foundation.
+                    All rights reserved.</a> </span> <a href="#" style="color: inherit;">Privacy Policy</a></p>
+        </div>
+    </footer>
+    <script src="js/blogs-handler.js"></script>
+</body>
+</html>
