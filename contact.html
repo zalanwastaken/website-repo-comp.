@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        section {
+            margin-bottom: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 10px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background: #45a049;
+            transform: scale(1.05);
+        }
+
+        #responseMessage {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #4CAF50;
+            background-color: #dff0d8;
+            color: #3c763d;
+            border-radius: 4px;
+            display: none; /* Start hidden */
+        }
+
+        .back-button {
+            background-color: #2980b9;
+            margin-top: 20px;
+            padding: 10px 15px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #217dbb;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you!</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Get in Touch</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="messageText" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="responseMessage"></div>
+            <button class="back-button" onclick="location.href='index.html'">Back to Home</button>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent the default form submission
+
+            // Gather form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('messageText').value;
+
+            // Display response message
+            const responseMessageDiv = document.getElementById('responseMessage');
+            responseMessageDiv.style.display = 'block';
+            responseMessageDiv.innerHTML = `Thank you, ${name}! Your message has been received. We will get back to you shortly.`;
+
+            // Optionally, reset the form
+            document.getElementById('contactForm').reset();
+        });
+    </script>
+</body>
+</html>

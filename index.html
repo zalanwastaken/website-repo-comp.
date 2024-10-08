@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
+
+=======
+>>>>>>> 4965ee425378a0134faa36f29ea6855c45b830b9
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +14,19 @@
         @import "css/header.css";
         @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
         @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
+<<<<<<< HEAD
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+        @import "css/slider.css";
+        @import "css/blog.css";
+    </style>
+</head>
+
+<body>
+    <header style="position: sticky; top: 0; width: 100vw; padding: 1vh 2vw ;">
+        <div class="name">
+            <a href="index.html" style="text-decoration: none;"><img src="assets/sri.png"
+                    style="max-width: 60%; height: 100%;"></a>
+=======
         .highlight {
             background-color: yellow;
         }
@@ -19,6 +36,7 @@
     <header>
         <div class="name">
             <a href="index.html" style="text-decoration: none;"><img src="assets/sri.png" style="max-width: 60%; height: 100%;"></a>
+>>>>>>> 4965ee425378a0134faa36f29ea6855c45b830b9
             <div class="text" style="width: 10vw;">Eco Impact Foundation</div>
         </div>
         <div class="nav">
@@ -26,6 +44,10 @@
             <span class="about-us"><a href="about-us.html">About Us</a></span>
             <span class="blog"><a href="#blog">Blog</a></span>
             <span class="faq-page"><a href="faq-page.html">FaQ</a></span>
+<<<<<<< HEAD
+            <span class="services"><a href="services.html">Services</a></span>
+=======
+>>>>>>> 4965ee425378a0134faa36f29ea6855c45b830b9
         </div>
         <div class="search-box">
             <form onsubmit="searchContent(event)">
@@ -36,6 +58,116 @@
     </header>
     <div id="welcome">
         <h1>Discover <span class="first">Digital Solution</span></h1>
+<<<<<<< HEAD
+        <h1 style="font-size: xx-large;">by <span class="second">S. R. International School</span></h1>
+        <div class="container">
+            <div class="slider" style="height: 100%;">
+                <div class="slide">
+                    <img src="assets/potentialheader.webp" alt="Image 1"/>
+                </div>
+                <div class="slide">
+                    <img src="assets/headerpart1.jpg" alt="Image 2" />
+                </div>
+                <div class="slide">
+                    <img src="assets/headerpart2.jpg" alt="Image 3" />
+                </div>
+                <div class="slide">
+                    <img src="assets/headerpart3.jpg" alt="Image 4" />
+                </div>
+    
+            </div>
+            <div class="controls">
+                <button class="prev">❮</button>
+                <button class="next">❯</button>
+            </div>
+            <div class="dots"></div>
+        </div>
+        <script>
+            const slider = document.querySelector(".slider");
+            const slides = document.querySelectorAll(".slide");
+            const prevButton = document.querySelector(".prev");
+            const nextButton = document.querySelector(".next");
+            const dotsContainer = document.querySelector(".dots");
+            let currentIndex = 0;
+            const totalSlides = slides.length;
+            // Create dots
+            for (let i = 0; i < totalSlides; i++) {
+                const dot = document.createElement("div");
+                dot.classList.add("dot");
+                dot.addEventListener("click", () => goToSlide(i));
+                dotsContainer.appendChild(dot);
+            }
+            const dots = document.querySelectorAll(".dot");
+            function updateSlider() {
+                slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle("active", index === currentIndex);
+                });
+            }
+            function goToSlide(index) {
+                currentIndex = index;
+                updateSlider();
+            }
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateSlider();
+            }
+            function prevSlide() {
+                currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                updateSlider();
+            }
+            prevButton.addEventListener("click", prevSlide);
+            nextButton.addEventListener("click", nextSlide);
+            slides.forEach((slide, index) => {
+                slide.addEventListener("click", () => goToSlide(index));
+            });
+            // Initialize the slider
+            updateSlider();
+        </script>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <main id="content" >
+        <section id="blog" style="width: 100vw;">
+            <h1 class="heading">Blog</h1>
+    <div class="blog-container">
+        <div class="blog-item">
+            <img src="assets/blogpic1.jpg" alt="Blog Image">
+            <div class="overlay-text">EXPLORE MORE</div>
+        </div>
+        <div class="blog-item">
+            <img src="assets/blogpic2.jpg" alt="Blog Image">
+            <div class="overlay-text">EXPLORE MORE</div>
+        </div>
+        <div class="blog-item">
+            <img src="assets/blogpic3.jpg" alt="Blog Image">
+            <div class="overlay-text">EXPLORE MORE</div>
+        </div>
+    </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+        <div class="footer-nav">
+            <a href="#blog">Blog</a>
+            <a href="services.html">Services</a>
+            <a href="donate.html">Donate</a>
+            <a href="faq-page.html">FAQ</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="footer-social">
+            <a href="https://facebook.com" target="_blank" class="social-icon">Facebook</a>
+            <a href="https://twitter.com" target="_blank" class="social-icon">Twitter</a>
+            <a href="https://instagram.com" target="_blank" class="social-icon">Instagram</a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon">LinkedIn</a>
+        </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Eco Impact Foundation. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+=======
         <h1 style="font-size: x-large;">by <span class="second">S. R. International School</span></h1>
         <img src="assets/hero.webp" alt="Sorry we couldn't load this image." class="img" style="border-radius: 1rem;">
         <div class="caption">
@@ -131,5 +263,6 @@
             }
         }
     </script>
+>>>>>>> 4965ee425378a0134faa36f29ea6855c45b830b9
 </body>
 </html>

@@ -1,0 +1,31 @@
+.blog-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.blog-item {
+    position: relative;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.blog-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}

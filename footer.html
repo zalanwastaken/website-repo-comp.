@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Footer</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+
+            .footer {
+                background-color: #1a1a1a;
+                color: #f0f0f0;
+                padding: 20px 0;
+                text-align: center;
+            }
+
+            .footer-container {
+                display: flex;
+                flex-direction: row; /* Change to row for columns */
+                justify-content: center; /* Center the columns */
+            }
+
+            .footer-nav,
+            .footer-social {
+                margin: 0 20px; /* Space between columns */
+            }
+
+            .footer-nav a {
+                color: #f0f0f0;
+                text-decoration: none;
+                margin: 0 15px;
+                transition: color 0.3s;
+            }
+
+            .footer-nav a:hover {
+                color: #ffcc00; /* Highlight color */
+            }
+
+            .footer-social .social-icon {
+                color: #f0f0f0;
+                text-decoration: none;
+                margin: 0 10px;
+                transition: color 0.3s;
+            }
+
+            .footer-social .social-icon:hover {
+                color: #ffcc00; /* Highlight color */
+            }
+
+            .footer-bottom {
+                border-top: 1px solid #333;
+                padding-top: 10px;
+            }
+
+            .footer-bottom p {
+                margin: 0;
+            }
+
+            /* Responsive Styles */
+            @media (max-width: 600px) {
+                .footer-container {
+                    flex-direction: column; /* Stack columns on smaller screens */
+                }
+
+                .footer-nav,
+                .footer-social {
+                    margin-bottom: 10px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-nav">
+                    <a href="#blog">Blog</a>
+                    <a href="#services">Services</a>
+                    <a href="#donate">Donate</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#contact">Contact Us</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://facebook.com" target="_blank" class="social-icon">Facebook</a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon">Twitter</a>
+                    <a href="https://instagram.com" target="_blank" class="social-icon">Instagram</a>
+                    <a href="https://linkedin.com" target="_blank" class="social-icon">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Your Company. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>
