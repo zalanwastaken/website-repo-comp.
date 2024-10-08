@@ -1,3 +1,42 @@
+#blog {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 2.5vh 0;
+}
+
+#blog>.gallery {
+    width: 100%;
+    height: fit-content;
+}
+
+#blog>.gallery>.pic-container>.img {
+    height: 80vh;
+    background-size: cover;
+    margin: 15vh 0;
+}
+
+#blog>.gallery .blogpic1 {
+    background: url(assets/blogpic1.jpg);
+    background-position: center;
+    border-radius: 1rem;
+}
+
+#blog>.gallery .blogpic2 {
+    background: url(assets/blogpic2.jpg);
+    background-position: center;
+    border-radius: 1rem;
+}
+
+#blog>.gallery .blogpic3 {
+    background: url(assets/blogpic3.jpg);
+    background-position: center;
+    border-radius: 1rem;
+}
+
 .blog-container {
     display: flex;
     justify-content: center;
