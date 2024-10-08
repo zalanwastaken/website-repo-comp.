@@ -109,27 +109,6 @@
         </div>
     </footer>
 
-    <script>
-        function searchContent(event) {
-            event.preventDefault(); // Prevent the default form submission
-
-            const query = document.getElementById('search-bar').value.toLowerCase();
-            const content = document.querySelector('.faq');
-            const textElements = content.querySelectorAll('p, .question'); // Select all relevant text elements
-
-            // Clear previous highlights
-            textElements.forEach(element => {
-                element.innerHTML = element.textContent; // Reset to original text
-            });
-
-            if (query) {
-                textElements.forEach(element => {
-                    const regex = new RegExp(`(${query})`, 'gi');
-                    element.innerHTML = element.textContent.replace(regex, '<span class="highlight">$1</span>');
-                });
-            }
-        }
-    </script>
+    <script src="js/search.js"></script>
 </body>
-
 </html>
