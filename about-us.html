@@ -7,32 +7,23 @@
     <style>
         @import "css/style.css";
         @import "css/footer.css";
-        @import "css/header.css";
-<<<<<<< HEAD
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
         @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
-=======
->>>>>>> 4965ee425378a0134faa36f29ea6855c45b830b9
+        @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
         .highlight {
             background-color: yellow; /* Change to desired highlight color */
         }
     </style>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
     <header>
         <div class="name">
-<<<<<<< HEAD
             <a href="index.html" style="text-decoration: none;"><img src="assets/sri.png" style="max-width: 60%; height: 100%;"></a>
             <div class="text" style="width: 10vw;">Eco Impact Foundation</div>
         </div>
         <div class="nav">
             <span class="home"><a href="index.html">Home</a></span>
         </div>
-=======
-            <a href="index.html" style="text-decoration: none;"><img src="assets/sri.jpg" style="max-width: 60%; height: 100%;"></a>
-            <div class="text" style="width: 10vw;">Eco Impact Foundation</div>
-        </div>
->>>>>>> 4965ee425378a0134faa36f29ea6855c45b830b9
         <div class="search-box">
             <form onsubmit="searchContent(event)">
                 <input type="search" name="q" id="search-bar" placeholder="Search">
@@ -72,52 +63,38 @@
             </div>
         </div>
     </section>
-<<<<<<< HEAD
-    <footer class="footer">
-        <div class="footer-container">
-        <div class="footer-nav">
-            <a href="#blog">Blog</a>
-            <a href="services.html">Services</a>
-            <a href="donate.html">Donate</a>
-            <a href="faq-page.html">FAQ</a>
-            <a href="contact.html">Contact Us</a>
-        </div>
-        <div class="footer-social">
-            <a href="https://facebook.com" target="_blank" class="social-icon">Facebook</a>
-            <a href="https://twitter.com" target="_blank" class="social-icon">Twitter</a>
-            <a href="https://instagram.com" target="_blank" class="social-icon">Instagram</a>
-            <a href="https://linkedin.com" target="_blank" class="social-icon">LinkedIn</a>
-        </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Eco Impact Foundation. All rights reserved.</p>
-        </div>
-    </footer>
-    <script src="js/index.js"></script>
-=======
     <footer>
-        <div class="upper-section">
-            <h1 class="heading">Follow Us</h1>
-            <hr>
-            <div class="sri-links">
-                <div class="logo">
-                    <span>S. R. International School</span>
-                </div>
-                <div class="links">
-                    <a href="https://www.youtube.com/@srinternationalschoolbareilly" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="http://" target="_blank"><i class="fa-brands fa-meta"></i></a>
-                    <a href="http://" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
-                    <a href="http://" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/srinternational_school/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-                </div>
+        <div class="footer-container">
+
+            <div class="footer-section footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#welsome">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section footer-socials">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i> Instagram</a>
+            </div>
+
+            <div class="footer-section footer-subscribe">
+                <h3>Subscribe to our Newsletter</h3>
+                <form id="subscribeForm" onsubmit="return validateEmail()">
+                    <input type="email" id="emailInput" placeholder="Your email" required>
+                    <button type="submit">Subscribe</button>
+                    <p id="error-message" style="color:red; display:none;">Please enter a valid email.</p>
+                </form>
             </div>
         </div>
-        <hr>
-        <div class="lower-section">
-            <span class="first">Eco Impact Foundation</span>
-            <button onclick="location.href = 'services.html'">Our Service</button>
-            <button onclick="location.href = 'n.html'">🙏Donate🙏</button>
-            <a href="LICENCE.txt"><span class="second">© 2024|All rights are reserved.</span></a>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Eco Impact Foundation. All rights reserved. | <a href="#" style="color: #00bcd4;">Privacy Policy</a></p>
         </div>
     </footer>
     <script>
@@ -141,6 +118,5 @@
             }
         }
     </script>
->>>>>>> 4965ee425378a0134faa36f29ea6855c45b830b9
 </body>
 </html>

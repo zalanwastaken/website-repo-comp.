@@ -4,14 +4,11 @@
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
 html{
     font-size: 18px;
     font-size: 'EB Garamond', serif;
 }
 
-=======
->>>>>>> 4965ee425378a0134faa36f29ea6855c45b830b9
 body {
     font-family: 'EB Garamond', serif;
     font-weight: 400;
@@ -24,32 +21,92 @@ body {
     margin: 2.5vh 0;
 }
 
-<<<<<<< HEAD
-=======
-@media (min-width: 1024px) {
-    body {
-        width: 100vw;
-        padding: 0 7.5vw;
-    }
-}
-
->>>>>>> 4965ee425378a0134faa36f29ea6855c45b830b9
 @media (max-width: 1100px) {
     html {
         font-size: 12px;
     }
 }
 
-<<<<<<< HEAD
-=======
-@media (max-width:1023px) {
-    body {
-        padding: 5vw;
-    }
+
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: #EEC355;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1vh 2vw;
 }
 
-/* styling for welcome section */
->>>>>>> 4965ee425378a0134faa36f29ea6855c45b830b9
+header>.name {
+    width: 12.5%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header>.name>.img {
+    width: 50%;
+    height: 100%;
+    background-image: url(assets/sri.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+header>.name>.text {
+    width: 55%;
+    font-size: 1rem;
+    color: rgb(19, 19, 19);
+}
+
+header>.nav {
+    height: 9vh;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+header>.nav>span {
+    max-height: max-content;
+    max-width: max-content;
+}
+
+header>.nav>span>a {
+    text-decoration: none;
+    color: black;
+}
+
+header>.nav>a:hover {
+    color: rgb(91, 80, 85);
+}
+
+header>.search-box {
+    max-width: fit-content;
+    height: max-content;
+    border-bottom: 1px solid #ffffff;
+}
+
+header>.search-box * {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+header>.search-box>form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header>.search-box span {
+    font-size: 1.25rem;
+}
+
+
 #welcome {
     width: 100%;
     margin: 10vh 0 5vh;
@@ -59,10 +116,7 @@ body {
     color: rgb(22, 19, 18);
     font-size: 3rem;
     font-weight: 400;
-<<<<<<< HEAD
     margin-left: 5vw;
-=======
->>>>>>> 4965ee425378a0134faa36f29ea6855c45b830b9
 }
 
 #welcome .first {
@@ -73,15 +127,9 @@ body {
     color: rgb(22, 172, 40);
 }
 
-<<<<<<< HEAD
 #welcome .container {
     width: 100%;
     margin: 2.5vh 0;
-=======
-#welcome>.img {
-    width: 100%;
-    margin: 1.5vh 0;
->>>>>>> 4965ee425378a0134faa36f29ea6855c45b830b9
 }
 
 #welcome>.caption {
@@ -94,10 +142,7 @@ body {
 
 #welcome>.caption>p {
     width: 45%;
-<<<<<<< HEAD
     font-size: 1.5rem;
-=======
->>>>>>> 4965ee425378a0134faa36f29ea6855c45b830b9
 }
 
 #welcome>.caption>button {
@@ -119,19 +164,12 @@ body {
     height: 10vh;
 }
 
-<<<<<<< HEAD
 
-=======
-/* styling for about us page */
->>>>>>> 4965ee425378a0134faa36f29ea6855c45b830b9
 
 #about-us {
     width: 100%;
     height: fit-content;
-<<<<<<< HEAD
     padding: 0 5vw;
-=======
->>>>>>> 4965ee425378a0134faa36f29ea6855c45b830b9
 }
 
 #about-us>h2 {
@@ -162,16 +200,6 @@ body {
     font-size: 1rem;
 }
 
-<<<<<<< HEAD
-#blog {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f1f1f1;
-    padding: 2.5vh 0;
-=======
 /* #about-us>.gallery>.text *{
     margin: 2vh 0;
 }
@@ -193,65 +221,110 @@ body {
 #blog {
     width: 100%;
     height: fit-content;
->>>>>>> 4965ee425378a0134faa36f29ea6855c45b830b9
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 2.5vh 0;
 }
 
 #blog>.gallery {
     width: 100%;
     height: fit-content;
-<<<<<<< HEAD
-=======
-    margin: 0 2rem;
->>>>>>> 4965ee425378a0134faa36f29ea6855c45b830b9
 }
 
 #blog>.gallery>.pic-container>.img {
     height: 80vh;
     background-size: cover;
-<<<<<<< HEAD
     margin: 15vh 0;
 }
 
 #blog>.gallery .blogpic1 {
     background: url(assets/blogpic1.jpg);
-=======
-    margin: 10vh 0;
-}
-
-#blog>.gallery .blogpic1 {
-    background: url(../assets/blogpic1.jpg);
->>>>>>> 4965ee425378a0134faa36f29ea6855c45b830b9
     background-position: center;
     border-radius: 1rem;
 }
 
 #blog>.gallery .blogpic2 {
-<<<<<<< HEAD
     background: url(assets/blogpic2.jpg);
-=======
-    background: url(../assets/blogpic2.jpg);
->>>>>>> 4965ee425378a0134faa36f29ea6855c45b830b9
     background-position: center;
     border-radius: 1rem;
 }
 
 #blog>.gallery .blogpic3 {
-<<<<<<< HEAD
     background: url(assets/blogpic3.jpg);
-=======
-    background: url(../assets/blogpic3.jpg);
->>>>>>> 4965ee425378a0134faa36f29ea6855c45b830b9
     background-position: center;
     border-radius: 1rem;
 }
 
-<<<<<<< HEAD
+/* styling for footer */
+/* footer{
+    width: 100%;
+    height: 40vh;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+footer>.upper-section{
+    height: 50%;
+    width: 100%;
+    margin: 2.5vh 0;
+}
+
+footer>.lower-section{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer hr{
+    border: 1px solid #a9a9a9;
+    margin: 0 5vw;
+}
+
+footer>.upper-section>.sri-links{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin:  0 ;
+    font-size: 1.25rem;
+}
+
+footer>.upper-section>.sri-links>.logo{
+    width: 40%;
+}
+
+footer>.upper-section>.sri-links>.links{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer>.upper-section>.sri-links>.links>a:hover{
+    color: #16AC28;
+}
+
+footer>.upper-section>.sri-links>.links>a{
+    color: #000000;
+}
+
+footer>.lower-setion>.first{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+footer button{
+    width: 10%;
+    height: 50%;
+    background-color: #EEC355;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+} */
 .highlight {
     background-color: yellow;
 }
-=======
-
-body{
-    overflow-x: hidden;
-}
->>>>>>> 4965ee425378a0134faa36f29ea6855c45b830b9
