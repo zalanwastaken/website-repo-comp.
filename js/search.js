@@ -1,15 +1,11 @@
 function searchContent(event) {
-    event.preventDefault(); // Prevent the default form submission
-
+    event.preventDefault();
     const query = document.getElementById('search-bar').value.toLowerCase();
     const content = document.getElementById('about-us');
-    const textElements = content.querySelectorAll('p, h1, h2, li'); // Select all relevant text elements
-
-    // Clear previous highlights
+    const textElements = content.querySelectorAll('p, h1, h2, li');
     textElements.forEach(element => {
-        element.innerHTML = element.textContent; // Reset to original text
+        element.innerHTML = element.textContent;
     });
-
     if (query) {
         textElements.forEach(element => {
             const regex = new RegExp(`(${query})`, 'gi');
