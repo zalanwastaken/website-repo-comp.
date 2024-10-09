@@ -63,3 +63,8 @@ slides.forEach((slide, index) => {
 
 // Initialize the slider
 updateSlider();
+
+function redir(data){
+    data = data.getAttribute("id")
+    window.location.href = `blogs.html?message=${encodeURIComponent(data)}`;
+}
