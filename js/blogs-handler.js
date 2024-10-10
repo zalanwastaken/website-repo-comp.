@@ -1,6 +1,10 @@
 var elements = document.getElementsByClassName("blogs");
 function getblog(blogno){
-    fetch("http://127.0.0.1:5005/blog"+blogno)
+    fetch("https://1964-152-58-97-34.ngrok-free.app/blog"+blogno, {
+        headers:{
+            'ngrok-skip-browser-warning': 'true'
+        }
+    })
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
